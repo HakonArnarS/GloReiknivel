@@ -1,0 +1,30 @@
+@import '../utilities/vars'; 
+
+.customFooter {
+    background-color: $colorPrimary;
+    padding: 1.5rem 1rem;
+    
+    .logo {
+        margin-bottom: 1.5rem;
+        
+        @media (min-width: 768px) { 
+            height: 3rem; 
+            width: auto; 
+        }
+    }
+    
+    ul {
+        margin-bottom: 1.5rem; 
+    }
+    li {
+        color: #fff; 
+        line-height: 1.5rem;
+        
+        @media (min-width: 768px) {
+            font-size: 1.25rem;  
+        }
+    }
+    span {
+        font-weight: 300; 
+    }
+}

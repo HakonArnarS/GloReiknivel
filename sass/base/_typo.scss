@@ -1,0 +1,96 @@
+@import '../utilities/vars';
+
+
+$font-stack: 'Roboto', sans-serif;
+
+body, html {
+    font-family: $font-stack; 
+}
+p {
+    font-size: 1rem; 
+    color: $colorPrimary; 
+    line-height: 1.25rem;
+    font-weight: 300;
+    
+    @media (min-width: 768px) {
+        font-size: 1.25rem;
+        line-height: 1.5rem; 
+    }
+}
+
+h3 {
+    font-size: 1.15rem; 
+    
+    @media (min-width: 768px) {
+        font-size: 1.5rem; 
+    }
+}
+
+h4 {
+    font-size: 1rem; 
+    
+    @media (min-width: 768px) {
+        font-size: 1.15rem; 
+    }
+}
+
+// Desktop Navigation 
+.dNavLink {
+    position: relative; 
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff; 
+    padding: 0;
+    line-height: 2rem;
+
+    &:before { 
+        content: '';
+        position: absolute;
+        transition: transform .3s ease;
+        left: 0;
+        bottom: -5%; 
+        width: 100%;
+        height: 2px;
+        background: lighten($colorDPrimary, 25%);
+        transform: scaleX(0); 
+    }
+
+    &:hover {
+        color:#fff; 
+    }
+
+    &:hover:before,
+    &:focus:before {
+        transform:  scaleX(1);
+    }
+}
+
+// bowl.html - Selection styles
+.select {
+    background-color: $colorDPrimary;
+    text-indent: 1rem; 
+    color: #fff; 
+}
+
+a {
+    color: $colorPrimary;
+    padding: 0.25rem; 
+    text-decoration: none;
+    
+    &:hover {
+        color: $colorPrimary; 
+        text-decoration: none;
+    }
+}
+
+a.selection {
+    color: $colorPrimary; 
+    text-decoration: none;
+    cursor: pointer; 
+    border-bottom: 1px solid;
+
+    @media (min-width: 992px) {
+        border-bottom: none;  
+    }
+}
+

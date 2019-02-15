@@ -1,0 +1,80 @@
+@import '../utilities/vars'; 
+
+
+.myCardsContainer {
+    background-color: $colorDPrimary;
+    flex-direction: row; 
+}
+
+.myCard {
+    padding-top: 1rem; 
+    height: 345px;
+    
+    @media (min-width: 768px) {
+        height: 390px; 
+    }
+}
+
+.cardImg {
+    width: 45vw; 
+    height: auto;
+
+    @media (min-width: 768px) {
+        width: 20vw;
+    }
+} 
+
+.cardTitle {
+    color: #fff; 
+    padding: 0.5rem 1rem; 
+
+    @media (min-width: 768px) {
+        font-size: 1.15rem;  
+    }
+}
+
+.courseInfo {
+    p {
+        color: #fff; 
+        padding-left: 1rem;
+        margin-bottom: 1rem; 
+        
+        @media (min-width: 768px) {
+            font-size: 1rem;  
+        }
+    }
+}
+
+.price {
+    span {
+        color: #fff; 
+        font-weight: 400; 
+    }
+
+    p {
+        padding: 0; 
+        margin: 0; 
+    }
+} 
+
+.selectionCard { 
+    height: auto;
+    padding: 0 1rem; 
+    background-color: $colorDPrimary;
+    border-radius: 10px;
+    
+    img {
+        height: 15vw; 
+        padding: 1.5rem 0 1rem;
+        object-fit: contain; 
+    }
+
+    &:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.35), 0 7px 9px rgba(0,0,0,0.1);
+    }
+
+    @media (min-width: 992px) {
+        max-width: 270px;  
+    }
+
+}

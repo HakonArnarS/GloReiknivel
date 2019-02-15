@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <title>Gló Næringar-reiknivél</title>
+  </head>
+  <body>
+
+    <!--Navigation Header-->
+    <nav class="navbar customNav w-100" style="z-index: 15;" >
+        <a href="#">
+            <img src="img/icons/menu.svg" alt="hamburger menu" class="icon">
+        </a>
+        <a href="index.html">
+            <img src="img/glologo.svg" alt="Gló logo" class="logo">
+        </a>
+        <a href="#">
+            <img src="img/icons/cart.svg" alt="cart" class="icon">
+        </a>
+    </nav>
+
+    <!--Desktop Nav Header-->
+    <nav class="navbar desktopNav" style="z-index: 15;">
+        <a href="index.html">
+            <img src="img/glologo.svg" alt="Gló logo" class="logo">
+        </a>
+        <div class="col-6 d-flex  justify-content-between align-items-center">
+            <a href="#" class="dNavLink">Staðirnir</a>
+            <a href="#" class="dNavLink">Um Gló</a>
+            <a href="#" class="dNavLink">Blogg</a>
+            <a href="#" class="dNavLink">Pantanir</a>
+            <a href="#">
+                <img src="img/icons/cart.svg" alt="cart" class="icon">
+            </a>
+        </div>
+    </nav>
+
+    <!--Main Content / Order Selection-->
+    
+    <section class="contentSection d-md-flex flex-md-wrap">
+        <!--Sub Heading-->
+        <div class="d-flex align-items-center col-12">
+            <a href="index.html" class="col-3 p-0"><img src="img/icons/backarrow.svg" alt="" class="icon"></a>
+            <h3 class="col-6 text-center">Matseðill</h3>
+        </div>
+            <div class="d-flex flex-column col-md-6">
+                <!--Selection Menu-->
+                <ul class="d-flex justify-content-around">
+                    <li><a href="#"><h4>Skálar</h4></a></li>
+                    <li><a href="#"><h4>Vefjur</h4></a></li>
+                    <li><a href="#"><h4>Réttir</h4></a></li>
+                </ul>
+
+                <!--Menu card-carousel-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner card myCardsContainer ">
+                        <div class="active carousel-item myCard">
+                            <div class="contentSection d-flex flex-column align-items-center pt-0">
+                                <img src="img/indversk-skál.jpg" alt="indversk skál" class="cardImg">
+                                <div class="courseInfo">
+                                    <h3 class="cardTitle">Indversk Skál</h3>
+                                    <div class="hr"></div>
+                                    <p>Salatblanda, hýðishrísgrjón, dahl, sætar kartöflur, tzatziki dressing, mangó chutney, ristaðar kókosflögur.</p><br class="d-none d-md-block">
+                                    <div class="d-flex justify-content-end align-items-center price"><span>Verð:&nbsp;</span><p>1.690 kr.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item myCard">
+                            <div class="contentSection d-flex flex-column align-items-center pt-0">
+                                <img src="img/sportskal.jpg" alt="sportskál" class="cardImg">
+                                <div class="courseInfo">
+                                    <h3 class="cardTitle">Sportskál</h3>
+                                    <div class="hr"></div>
+                                    <p>Salatblanda, heilhveitipasta, oumph eða kjuklingur sætkartöflusalat, vatnsmelónur, pestó, ristaðar kókosflögur.</p>
+                                    <div class="d-flex justify-content-end align-items-center price"><span>Verð:&nbsp;</span><p>1.690 kr.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item myCard">
+                            <div class="contentSection d-flex flex-column align-items-center pt-0">
+                                <img src="img/kjúklingaskál.jpg" alt="kjúklingaskál" class="cardImg">
+                                <div class="courseInfo">
+                                    <h3 class="cardTitle">Kjúklingaskál</h3>
+                                    <div class="hr"></div>
+                                    <p>Salatblanda, heilhveiti pasta, kjúklingur eða oumph, rauðrófur, brokkolí, kirsuberjatómatar, spicy mæjó, kókosflögur.</p>
+                                    <div class="d-flex justify-content-end align-items-center price"><span>Verð:&nbsp;</span><p>1.890 kr.</p></div>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> 
+
+            <!-- Nutritional Value Selection-->
+            <section class="contentSection d-none d-md-block col-md-5 offset-md-1 p-0 nutriValue">
+
+                <!--Selection Næringargildi-->
+                <div class="naeringContainer">
+                    <h4 class="text-center">Næringargildi</h4>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Kaloríur</p>
+                        <p>670 kcal</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-cente">
+                        <p>Fita</p>
+                        <p>35g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Mettuð fita</p>
+                        <p>7,5g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Transfita</p>
+                        <p>0g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Kolvetni</p>
+                        <p>54g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Sykur</p>
+                        <p>4g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Trefjar</p>
+                        <p>11g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Prótein</p>
+                        <p>40g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Kólesteról</p>
+                        <p>125mg</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Natríum</p>
+                        <p>4g</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>A-vítamín (%RDS)</p>
+                        <p>49</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>C-vítamín (%RDS)</p>
+                        <p>95</p>
+                    </span>
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Kalk (%RDS)</p>
+                        <p>9</p>
+                    </span> 
+                    <span class="d-flex justify-content-between align-items-center">
+                        <p>Járn (%RDS)</p>
+                        <p>28</p>
+                    </span>               
+                </div>
+                <div class="d-flex justify-content-end align-items-center mb-3">
+                    <p class="font-weight-normal">Verð:&nbsp;</p><p>1.190 kr.</p>
+                </div>  
+                
+                <!--Nutrition Value Buttons Container-->
+                <div class="contentSection d-flex flex-column align-items-center justify-content-between pt-0"> 
+                    <button class="primaryBtn my-2"><a>Bæta í pöntun</a></button> 
+                    <button class="backBtn my-2"><a>Til baka</a></button>
+                </div>         
+            </section>
+    </section>
+
+    <!--Mobile Buttons Container-->
+    <div class="contentSection d-flex flex-column align-items-center justify-content-between d-md-none pt-0 w-100"> 
+        <button class="primaryBtn w-100 my-2"><a>Bæta í pöntun</a></button>
+        <button class="backBtn w-100 my-2"><a>Til baka</a></button>
+    </div>
+        
+    <!--Bottom Show Nutrition Bar-->
+    <button class="showMacrosBtn d-flex align-items-center justify-content-around d-md-none">
+        P: 40g&nbsp; K: 54g&nbsp; F: 35g&nbsp; kcal: 670
+        <img src="img/icons/showmore.svg" alt="" class="info-icon">
+    </button>
+
+    <!--Footer Section-->
+    <section class="customFooter d-md-flex">
+        <div class="col-md-6">
+            <img src="img/glologo.svg" alt="" class="logo d-block">
+            <div class="hr"></div>
+            <ul class="d-flex justify-content-between col-8 offset-4">
+                <li><img src="img/icons/facebook.svg" alt="" class="icon"></li>
+                <li><img src="img/icons/instagram.svg" alt="" class="icon"></li>
+                <li><img src="img/icons/snapchat.svg" alt="" class="icon"></li>
+            </ul>
+        </div> 
+            <ul class="col-md-4 offset-md-1 d-md-flex flex-md-column justify-content-between">
+                <li>Gló veitingar ehf.</li>
+                <li>Hæðasmára 6, 200 Kópavogi</li>
+                <li>Netfang: <span>glo@glo.is</span></li>
+                <li>Sími: <span>553-1111</span></li>
+            </ul>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

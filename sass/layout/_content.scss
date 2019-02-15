@@ -1,0 +1,45 @@
+@import '../utilities/vars'; 
+
+// My default Main-Content container
+.contentSection {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+    padding-top: 75px; 
+}
+
+// horizonatal line
+.hr {
+    height: 1px; 
+    background-color: #fff; 
+    margin-bottom: 1.5rem; 
+}
+
+//Nutrition Value specific styles
+.naeringContainer {
+    position: relative; 
+    margin-bottom:1.5rem;
+
+    span {
+        padding: 0 1rem; 
+
+        &:nth-child(odd) {
+            background-color: #d1d1d1; 
+        }
+    }
+
+    p {
+        color: $colorPrimary;;
+        line-height: 1.5rem;
+    }
+
+    h3 { 
+        margin: 2rem 0 1rem; 
+    }
+
+    h4 {
+        padding: 1rem 0 0.25rem;
+    }
+}
+

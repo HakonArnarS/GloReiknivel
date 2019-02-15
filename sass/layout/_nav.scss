@@ -1,0 +1,30 @@
+@import '../utilities/vars';
+
+.customNav {
+    position: fixed; 
+    background-color: $colorPrimary; 
+    margin-bottom: 1rem;
+    z-index: 15 !important; 
+    
+    @media (min-width: 992px) {
+        display: none; 
+    }
+}
+
+.desktopNav {
+    position: fixed; 
+    width: 100vw; 
+    display: none;
+    z-index: 15 !important;  
+
+    @media (min-width: 992px) {
+        background-color: $colorPrimary;
+        color: #fff;  
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        width: 100%; 
+        height: auto; 
+    }
+}
